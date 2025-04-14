@@ -1,0 +1,24 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: rgb(150, 150, 150);
+    overflow: hidden;
+}
+
+nav a {
+    padding: 2vw;
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+nav .active {
+    color: red;
+    background-color: black;
+}
