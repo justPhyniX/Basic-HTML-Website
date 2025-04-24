@@ -1,6 +1,7 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #110F1A;
+    color: white;
 }
 
 .top_bar {
@@ -22,8 +23,7 @@ body {
 .page_name {
     text-align: left;
     font-weight: lighter;
-    color: white;
-    margin: 0;
+    margin: 0 1vw;
 }
 
 .navbar {
@@ -61,18 +61,95 @@ body {
 
 .header_container {
     text-align: center;
-    border: 1px solid white;
-    padding: 5rem;
+    border: 1px solid;
+    padding: 8em;
 
 }
 
 .main_title {
     color: white;
-    margin: 2vh;
+    margin: 1rem;
 }
 
 .subtitle {
     margin: 0;
     font-weight: lighter;
-    color: #8BE8CB;
+    opacity: 0.5;
+}
+
+.link {
+    color:#8BE8CB;
+    text-decoration: none;
+}
+
+#list1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+#list1 li {
+    border-bottom: 1px solid;
+}
+
+#list1 li:last-child {
+    border-bottom: none;
+}
+
+#list1 li div {
+    margin: 0.5em 1em;
+}
+
+#list2 {
+    list-style-type: none;
+    padding: 0;
+    list-style-position: inside;
+}
+
+#list2 li::marker {
+    content: "- ";
+    color: white;
+}
+
+.card_container {
+    display: flex;
+}
+
+.card {
+    border: 1px solid;
+}
+
+.card_title {
+    margin: 1em;
+}
+
+.card_part {
+    border-bottom: 1px solid;
+}
+
+.card_part:last-child {
+    border-bottom: none;
+}
+
+.card_content {
+    margin: 1em;
+}
+
+.bubbles_container {
+    display: flex;
+    margin: 1em;
+}
+
+.bubbles_title {
+    margin: 2em 1.5em 1em;
+}
+
+.bubble {
+    margin: 0 1em;
+    border: 2px solid;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.bubble_name {
+    opacity: 0.3;
 }
