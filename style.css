@@ -3,6 +3,7 @@ body {
     background-color: #110F1A;
     color: white;
     height: 100%;
+    font-size: 1.3em;
 }
 
 .top_bar {
@@ -35,7 +36,7 @@ body {
 .navbar ul {
     list-style-type: none;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 .navbar a {
@@ -44,6 +45,7 @@ body {
     padding: 1.5vh;
     display: block;
     text-align: center;
+    transition-duration: 0.2s;
 }
 
 .navbar .active {
@@ -117,6 +119,11 @@ body {
 
 .card {
     border: 1px solid;
+    flex: 1;
+}
+
+#projects {
+    flex: 0.3;
 }
 
 .card_title {
@@ -145,10 +152,19 @@ body {
 }
 
 .bubble {
-    margin: 0 1em;
+    margin: 0 2em;
     border: 2px solid;
     padding: 1em;
     border-radius: 2em;
+    max-width: 20em;
+}
+
+.bubble:first-child {
+    margin-left: 1em;
+}
+
+.bubble:last-child {
+    margin-right: 1em;
 }
 
 .bubble_name {
@@ -156,7 +172,7 @@ body {
 }
 
 footer {
-    margin: 10em 0 3em;
+    margin: 10em 0 1em;
     display: flex;
     justify-content: center;
 }
